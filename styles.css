@@ -1,0 +1,32 @@
+body {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    
+}
+
+p {
+    text-align: center;
+    font-size: 21px;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 60%;
+}
+
+.botao {
+    text-align: right;
+}
+
+img {
+    width: 60%;
+    height:30%;
+}
+
+button {
+    width: 30%;
+    height: 15%;    
+}
+

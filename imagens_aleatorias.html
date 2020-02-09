@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Imagens aleatórias</title>
+</head>
+<body>
+    <div class="container">   
+    <p>imagens aleatórias  </p>
+    <p>tema: pinturas com oliveiras</p>    
+    
+    <!-- Pintura inicial -->
+    <img id="imagem" src="olive_chase.jpg">
+    <p></p>
+    <button onclick="mudaPintura()" id="botao">Trocar</button>
+    </div>
+    
+    <script>
+        //Lista com todas as pinturas       
+        var pinturas = new Array("olive_chase.jpg", "olive_dali.jpg", "olive_degas.jpg", "olive_elgreco.jpg", 
+                                 "olive_matisse.jpg", "olive_monet.jpg", "olive_sargent.jpg", "olive_vangogh.jpg");
+        
+        //contador de todos itens da lista
+        var lista = pinturas.length;
+        
+        //função sorteadora
+        function mudaPintura() {
+        var exposicao_aleatoria = Math.round(Math.random()*(lista-1));
+    
+        document.getElementById("imagem").src = pinturas[exposicao_aleatoria];
+         }
+    </script>
+</body>
+</html>
